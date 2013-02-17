@@ -1,0 +1,15 @@
+/* demo */
+.float-outer {
+    border-color: black;
+    border-style: solid;
+    border-width: 1px 0;
+}
+.float-outer div {
+    border-color: blue;
+    border-style: solid;
+    border-width: 1px 0;
+    width: 50%;
+}
+.line {
+    border: 1px solid red;
+}

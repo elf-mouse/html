@@ -1,0 +1,1 @@
+<div class="countdown" data-time="86400">剩余时间：<em class="day">0</em>天<em class="hour">0</em>小时<em class="minute">0</em>分<em class="second">0</em><em class="ms"></em>秒</div>

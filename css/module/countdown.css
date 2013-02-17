@@ -1,0 +1,10 @@
+.countdown em {
+    font-style: normal;
+}
+.countdown .ms {
+    background: url("../images/micro-second.gif") no-repeat scroll 50% 50% transparent;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    vertical-align: text-bottom;
+}

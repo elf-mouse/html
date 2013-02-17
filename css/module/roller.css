@@ -1,0 +1,17 @@
+.roll-outer {
+    position: relative;
+    height: 300px;
+    overflow: hidden;
+    border: 1px solid red;
+}
+.roll {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top: 0;
+}
+.roll-item {
+    border-bottom: 1px dotted #666;
+    padding: 5px;
+    _height: 27px;
+}

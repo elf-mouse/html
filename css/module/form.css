@@ -1,0 +1,92 @@
+body {
+    background: url("../images/page-bg.gif") 0 0 repeat !important;
+}
+fieldset {
+    border: 1px solid;
+    margin: 20px;
+    padding: 0 20px 20px;
+}
+legend {
+    padding: 0 5px;
+}
+li {
+    height: 32px;
+}
+label {
+    width: 119px;
+    height: 19px;
+    line-height: 19px;
+    _line-height: 20px;
+    overflow: hidden;
+    text-align: right;
+    cursor: pointer;
+}
+input, select, textarea {
+    font-size: 99%;
+}
+input {
+    color: #666;
+    font-size: 12px;
+}
+input[type="text"] {
+    margin: 0 5px 0 5px;
+    padding: 3px;
+    width: 219px;
+    height: 12px;
+    border: 1px solid #a7a6aa;
+    background: #FFF url("../images/input-bg.gif") 0 0 no-repeat;
+}
+input[type="radio"], input[type="checkbox"] {
+    vertical-align: middle;
+    margin: 0 0 0 5px;
+}
+input[type="file"] {
+    height: 18px;
+    margin: 0 0 0 4px;
+}
+select {
+    margin: 0 0 0 4px;
+}
+textarea {
+    width: 400px;
+    height: 5em;
+    margin: 0 0 0 4px;
+    padding: 3px;
+    color: #666;
+    font-size: 12px;
+    border: 1px solid #a7a6aa;
+    background: #FFF url("../images/input-bg.gif") 0 0 no-repeat;
+}
+/* ie */
+.lte7 input[type="text"] {
+    margin: -1px 5px 0 5px;
+}
+.ie8 input[type="radio"], .ie8 input[type="checkbox"] {
+    vertical-align: text-bottom;
+}
+.lte7 input[type="file"] {
+    margin: -1px 0 0 4px;
+}
+.ie6 select {
+    margin: 0 0 0 2px;
+}
+.ie7 textarea {
+    margin: -1px 0 0 4px;
+}
+.ie6 textarea {
+    margin: -1px 0 0 2px;
+}
+.ie6 input.text {
+    margin: -1px 5px 0 2px;
+    padding: 3px;
+    width: 223px;
+    height: 12px;
+    border: 1px solid #a7a6aa;
+    background: #FFF url("../images/input-bg.gif") 0 0 no-repeat;
+}
+.ie6 input.checkbox, .ie6 input.radio {
+    margin: -1px 0 0 -2px;
+}
+.ie6 input.file {
+    margin: -1px 0 0 1px;
+}

@@ -1,0 +1,99 @@
+/* a:link -> a:hover -> a:active -> a:visited */
+/* using local fonts? make sure to read up on Paul Irish's Bulletproof @font-face syntax: http://mky.be/font-face/bulletproof/ */
+a, button.a {
+    color: #03F;
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    font-weight: normal;
+    vertical-align: baseline;
+    background-color: transparent;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    *vertical-align: middle;
+}
+/* Accessible focus treatment people.opera.com/patrickl/experiments/keyboard/test */
+a:hover, a:active {
+    outline: none;
+}
+a:link, a:visited {
+    text-decoration: none;
+}
+/*  j.mp/webkit-tap-highlight-color */
+a:link {
+    -webkit-tap-highlight-color: rgba(255,255,102,0.8);
+}
+a:hover, button.a:hover {
+    color: #69F;
+    text-decoration: underline;
+}
+
+/* Elf-mousE's a */
+button.a {
+    background: none !important;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+/* Elf-mousE's button */
+a.button, button {
+    margin: 0;
+    border-style: solid;
+    border-width: 0;
+    padding: 0;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
+    font-weight: bold;
+    text-align: center;
+    white-space: nowrap;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+}
+a.button:hover {
+    text-decoration: none;
+    _color: #fff;
+}
+.btn-inner {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+.btn-inner i, .btn-inner span {
+    display: inline-block;
+    vertical-align: top;
+    font-style: normal;
+}
+
+/* ie */
+.ie6 button {
+    width: auto;
+    overflow: visible;
+}
+
+/* demo */
+a.button, button {
+    height: 20px;
+    line-height: 20px;
+    margin: 0 5px;
+    padding: 0 10px;
+    box-shadow: 0 5px 5px -5px blue;
+}
+a.border-button, button.border-button {
+    border: 1px solid #000;
+    height: 22px;
+}
+a.border-button {
+    height: 20px;
+    _height: 22px;
+}
+a.button, button, a.border-button, button.border-button {
+    background-color: #0072C6;
+    color: #fff;
+}
+a.button:hover, button:hover, a.border-button:hover {
+    background-color: #1E82CC;
+}
