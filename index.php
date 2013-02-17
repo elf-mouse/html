@@ -11,7 +11,11 @@ else {
 }
 ?>
 <!DOCTYPE html>
-<html>
+<!--[if lt IE 7]> <html class="no-js lte9 lte8 lte7 ie6"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lte9 lte8 lte7 ie7"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lte9 lte8 ie8"> <![endif]-->
+<!--[if IE 9]>    <html class="no-js lte9 ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><html class="no-js"><!--<![endif]-->
 <head>
 <meta charset="utf-8">
 <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> -->
@@ -29,6 +33,10 @@ if (file_exists($filename)) {
     echo $output;
 }
 ?>
+<!--[if lt IE 9]>
+<link rel="stylesheet" href="css/ie.css">
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
 </head>
 <body>
 <!--[if lt IE 7]><p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p><![endif]-->
