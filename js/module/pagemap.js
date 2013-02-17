@@ -55,10 +55,8 @@
 			changeState(1);
 		});
 	}
-	
-	$.fn.pagemap = function() {};
 
-	$.pagemap = function(opts) {
+	$.pagemap = $.fn.pagemap = function(opts) {
 		if (typeof opts !== 'undefined' && typeof opts === 'object') {
 			$.extend(defaults, opts);
 		}

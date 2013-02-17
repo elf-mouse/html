@@ -66,9 +66,7 @@
 		return str;
 	}
 
-	$.fn.input = function() {};
-
-	$.input = function() {
+	$.input = $.fn.input = function() {
 		return $.input;
 	};
 

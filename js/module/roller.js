@@ -45,9 +45,7 @@
 		});
 	};
 
-	$.fn.roller = function() {};
-
-	$.roller = function(opts) {
+	$.roller = $.fn.roller = function(opts) {
 		checkPosition(opts);
 		$this = $(defaults.className);
 		length = $this.find(defaults.itemClassName).length - 1;

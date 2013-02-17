@@ -35,9 +35,7 @@
 	    }
 	};
 
-	$.fn.countdown = function() {};
-
-	$.countdown = function(opts) {
+	$.countdown = $.fn.countdown = function(opts) {
 		if (typeof opts !== 'undefined' && typeof opts === 'object') {
 			$.extend(defaults, opts);
 		}

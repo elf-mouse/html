@@ -131,9 +131,7 @@
 		changeCity();
 	}
 
-	$.fn.city = function() {};
-
-	$.city = function(opts) {
+	$.city = $.fn.city = function(opts) {
 		if (opts) {
 			if (opts.pid) {
 				defaults.provId = opts.pid;

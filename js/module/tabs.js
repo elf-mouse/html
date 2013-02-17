@@ -11,9 +11,7 @@
 		hidden : 'hidden'
 	};
 
-	$.fn.switchTabs = function() {};
-
-	$.switchTabs = function(opts) {
+	$.switchTabs = $.fn.switchTabs = function(opts) {
 		if (typeof opts !== 'undefined' && typeof opts === 'object') {
 			$.extend(defaults, opts);
 		}

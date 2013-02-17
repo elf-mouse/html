@@ -155,10 +155,8 @@
 			}
 		});
 	};
-	
-	$.fn.quicksearch = function() {};
 
-	$.quicksearch = function(opts) {
+	$.quicksearch = $.fn.quicksearch = function(opts) {
 		if (typeof opts !== 'undefined' && typeof opts === 'object') {
 			$.extend(defaults, opts);
 		}
