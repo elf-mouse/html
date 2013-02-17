@@ -1,0 +1,11 @@
+table {
+    width: 100%;
+}
+.odd {
+}
+.even {
+    background: #EAEAEA;
+}
+.hover {
+    background: #999;
+}
