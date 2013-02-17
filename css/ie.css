@@ -1,0 +1,16 @@
+/**
+ * IE6在window.onload(或模拟的domready)时执行脚本，会引发一些cache的问题:
+ * 问题1. 此时JS对dom进行渲染级的变动，如设置宽高、innerHTML等，会对元素的背景图进行重新请求
+ * 问题2. 此时JS对多个Image元素设置同一src，此src会被请求多次
+ * from: http://ued.taobao.com/blog/2010/05/17/ie6-duplicate-load-bug/
+ */
+.ie6 {
+    zoom: expression(function(ele){
+        ele.style.zoom = "1";
+        document.execCommand("BackgroundImageCache", false, true);
+    }(this));
+}
+.ie6, .ie6 body {
+    background-attachment: fixed;
+    background-image: url(about:blank);
+}
