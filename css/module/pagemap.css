@@ -111,7 +111,7 @@
 */
 .map_small{width: 133px;height: 127px;position:fixed;top: 10px; right:10px; z-index:100;display:none;overflow: visible; text-align:center;}
 .map_stay{position: absolute;}
-.map_box{width: 355px;height: 238px;position:fixed;top: 10px;right:10px;z-index:101;overflow: visible; text-align:center;background: url(../images/pagemap-max.png) center top no-repeat;_display:none;}
+.map_box{width: 355px;height: 238px;position:fixed;top: 10px;right:10px;z-index:101;overflow: visible; text-align:center;background: url(../../images/pagemap/pagemap-max.png) center top no-repeat;_display:none;}
 .map_box_stay{position: absolute;}
 .map_box .map_box_con{width: 355px;height: 238px;position: relative;}
 .map_box .map_box_con a{position: absolute; display: block; width: 33px; height: 33px; background: url(http://img03.taobaocdn.com/tps/i3/T1VEwRXdJdXXbKu7Ha-19-19.png) -100px -100px no-repeat;}
@@ -124,7 +124,7 @@
 .map_box .map_box_con .btn_nav5{width: 33px;height: 33px; left: 194px;top: 138px;}
 .map_box .map_box_con .btn_nav6{width: 33px;height: 33px; left: 257px;top: 166px;}
 .map_box .map_box_con .btn_nav7{width: 33px;height: 33px; left: 160px;top: 196px;}
-.map_box .map_box_con .map_now{background: url(../images/pagemap-btn.png) 0 0 no-repeat;}
+.map_box .map_box_con .map_now{background: url(../../images/pagemap/pagemap-btn.png) 0 0 no-repeat;}
 .map_box .map_box_con .map_now_ani{background-position: 0 -33px;}
 .map_box .map_box_con .btn_Close{width:27px;height: 27px;display: block;position: absolute;right: 35px; top: 14px;}
 .tishi_msg{width: 99px; height: 109px;position: fixed;top: 10px;left: 10px;z-index:101;_position:absolute; _top:expression(documentElement.scrollTop + 10);}

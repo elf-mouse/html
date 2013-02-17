@@ -1,5 +1,5 @@
 body {
-    background: url("../images/page-bg.gif") 0 0 repeat !important;
+    background: url("../../images/form/page-bg.gif") 0 0 repeat !important;
 }
 fieldset {
     border: 1px solid;
@@ -34,7 +34,7 @@ input[type="text"] {
     width: 219px;
     height: 12px;
     border: 1px solid #a7a6aa;
-    background: #FFF url("../images/input-bg.gif") 0 0 no-repeat;
+    background: #FFF url("../../images/form/input-bg.gif") 0 0 no-repeat;
 }
 input[type="radio"], input[type="checkbox"] {
     vertical-align: middle;
@@ -55,7 +55,7 @@ textarea {
     color: #666;
     font-size: 12px;
     border: 1px solid #a7a6aa;
-    background: #FFF url("../images/input-bg.gif") 0 0 no-repeat;
+    background: #FFF url("../../images/form/input-bg.gif") 0 0 no-repeat;
 }
 /* ie */
 .lte7 input[type="text"] {
@@ -82,7 +82,7 @@ textarea {
     width: 223px;
     height: 12px;
     border: 1px solid #a7a6aa;
-    background: #FFF url("../images/input-bg.gif") 0 0 no-repeat;
+    background: #FFF url("../../images/form/input-bg.gif") 0 0 no-repeat;
 }
 .ie6 input.checkbox, .ie6 input.radio {
     margin: -1px 0 0 -2px;

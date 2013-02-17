@@ -33,7 +33,7 @@
     padding: 15px 20px;
 }
 .quickSearch-btn, .quickSearch-close {
-    background: url("../images/quick-search.png");
+    background: url("../../images/quicksearch/quick-search.png");
 }
 .quickSearch-hd em {
     display: inline-block;
