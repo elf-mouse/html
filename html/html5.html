@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>HTML5 Elements</title>
+<!-- <base href="http://fmouz.com/" target="_self"> -->
+<link rel="stylesheet" href="../css/normalize.css">
+<!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+</head>
+<body>
+    <h2>Sections</h2>
+    <div style="border: 1px solid #A0AFFF">
+        <article>article 定义文章。</article>
+        <nav>nav 定义导航链接。</nav>
+        <aside>aside 定义页面内容之外的内容。</aside>
+        <section>section</section>
+        <header>header 定义 section 或 page 的页眉。</header>
+        <footer>footer 定义 section 或 page 的页脚。</footer>
+        <hgroup>
+            <h1>h1</h1>
+            <h2>h2</h2>
+            <h3>h3</h3>
+            <h4>h4</h4>
+            <h5>h5</h5>
+            <h6>h6</h6>
+    	</hgroup>
+    	<address>address定义地址元素。<a href="mailto:contact@example.org">Email us</a></address>
+	</div>
+	<br>
+	<h2>Grouping</h2>
+	<div style="border: 1px solid #FF9650">
+		<p>p 定义段落。</p>
+		<hr>
+		br 插入换行符。 <br>
+		<pre>pre 定义预格式化文本。</pre>
+		<blockquote cite="http://fmouz.com/">blockquote 定义长的引用。</blockquote>
+		<ol>
+		    <li>ol 定义有序列表。</li>
+		</ol>
+		<ul>
+		    <li>ul 定义无序列表。</li>
+		</ul>
+		<dl>
+		    <dt>dt 定义定义的项目。</dt>
+		    <dd>dd 定义定义的描述。</dd>
+		</dl>
+		<figure>
+		    <figcaption>figcaption 定义 figure 元素的标题。</figcaption>
+		    <p>figure 定义媒介内容的分组，以及它们的标题。</p>
+		</figure>
+		<div>div 定义文档中的一个部分。</div>
+	</div>
+	<br>
+	<h2>Tables</h2>
+	<div style="border: 1px solid #FF9664">
+		<table style="width:100%">
+			<caption>caption 定义表格标题。</caption>
+			<colgroup>
+			<col />
+			<col />
+			</colgroup>
+			<thead>
+			    <tr>
+			        <th>thead 定义表头。</th>
+			        <th>th 定义表头。</th>
+			    </tr>
+			</thead>
+			<tbody>
+			    <tr>
+			        <td>tbody 定义表格的主体。</td>
+			        <td>td 定义表格单元。</td>
+			    </tr>
+			</tbody>
+			<tfoot>
+			    <tr>
+			        <td colspan="2" rowspan="1">tfoot 定义表格的脚注。</td>
+			    </tr>
+			</tfoot>
+		</table>
+	</div>
+	<br>
+	<h2>Forms</h2>
+	<div style="border: 1px solid #64FF64">
+		<form>
+			<fieldset>
+				<legend>legend 定义 fieldset 中的标题。</legend>
+				<label>label 定义表单控件的标注。</label>
+				<input type="text" value="HTML4:button,checkbox,file,hidden,image,password,radio,reset,submit,text"><br>
+				<input type="checkbox" name="checkbox" id="checkbox" /> <label for="checkbox">多选</label><br> 
+				<input type="radio" name="radio" id="radio" /> <label for="radio">单选</label><br>
+				<input type="file" /><br>
+				<button type="button">button 定义按钮(button/reset/submit)。</button><br>
+				<select>
+				    <optgroup label="optgroup 定义选项组。">
+				        <option>option 定义下拉列表中的选项。</option>
+				    </optgroup>
+				</select><br>
+				<input id="myCar" list="cars" value="datalist定义下拉列表。">
+				<datalist id="cars">
+				    <option value="BMW">
+				    <option value="Ford">
+				    <option value="Volvo">
+				</datalist>
+				<br>
+				<textarea>textarea</textarea>
+			</fieldset>
+		</form>
+	</div>
+	<br>
+	<h2>Forms 2</h2>
+	<div style="border: 1px solid #64FF64">
+	    <form>
+	        keygen 定义生成密钥。<keygen name="security"><br>
+	        <output>output 定义输出的一些类型。</output><br>
+	        progress 定义任何类型的任务的进度。<progress max="100" value="50"></progress><br>
+	        meter 定义预定义范围内的度量。
+	        <meter min="0" max="100" optimum="high" value="60"></meter>
+	        <meter min="0" max="40" optimum="37.6" value="38"></meter>
+	    </form>
+	</div>
+	<br>
+	<h2>Interactive</h2>
+	<div style="border: 1px solid">
+		<details>
+		    <summary>summary 定义 details 元素的标题。</summary>
+		    <p>details 定义元素的细节。</p>
+		</details>
+		<command onclick="alert('Hello World')">command 定义命令按钮。</command>
+		<menu>
+		    <li>menu 定义菜单列表。</li>
+		</menu>
+	</div>
+	<br>
+	<h2>Edits</h2>
+	<div>
+	    <del>del 定义删除文本。</del>
+	    <ins>ins 定义插入文本。</ins>
+	</div>
+	<h2>Embedded</h2>
+	<div style="border: 1px solid #FF96FF">
+		<img src="/" alt="定义图像。" usemap="#map">
+		<map id="map" name="map">
+		    <area shape="rect" coords="0,0,110,260" href="#" alt="rect">
+		    <area shape="circle" coords="129,161,10" href="#" alt="circle">
+		</map>
+		<br>
+		<iframe src="iframe.html">iframe 定义行内的子窗口（框架）。</iframe><br>
+		<!-- embed 定义外部交互内容或插件。<embed src="helloworld.swf"><br>
+		object 定义嵌入对象。param 为对象定义参数。<object data="helloworld.swf"><param name="min" value="0"></object><br>
+		<video width="320" height="240" controls="controls">
+		    <source type="video/ogg" src="forrest_gump.ogg">
+		    <source type="video/mp4" src="forrest_gump.mp4">
+		    <track kind="subtitles" src="subs_eng.srt" srclang="en" label="English">
+		    <track kind="subtitles" src="subs_chi.srt" srclang="zh" label="Chinese">
+		</video><br>
+		<audio src="someaudio.wav" controls="controls"></audio><br> -->
+		<canvas id="myCanvas">canvas 标签定义图形，比如图表和其他图像。canvas 标签只是图形容器，您必须使用脚本来绘制图形。</canvas>
+		<script>
+		var canvas = document.getElementById('myCanvas'), ctx = canvas.getContext('2d');
+		ctx.fillStyle = '#F00';
+		ctx.fillRect(0,0,80,100);
+		</script>
+	</div>
+	<br>
+	<h2>Text-level</h2>
+	<div style="border: 1px solid #FFFF64">
+		<a href="#">a 定义超链接。</a><br>
+		<em>em 呈现为被强调的文本。</em><br>
+		<strong>strong 定义重要的文本。</strong><br>
+		<i>i 定义斜体文本。</i><br>
+		<b>b 定义粗体文本。</b><br>
+		<small>small 将旁注 (side comments) 呈现为小型文本。</small><br>
+		<abbr title="People's Republic of China">abbr定义缩写。</abbr><br>
+		<q cite="http://fmouz.com/">q 定义短的引用。</q><br>
+		<cite>cite 定义引用。可使用该标签对参考文献的引用进行定义，比如书籍或杂志的标题。</cite><br>
+		<dfn>dfn 定义一个定义项目。</dfn><br>
+		这段文本包含<sub>sub 定义下标文本。</sub><br> 这段文本包含<sup>sup 定义上标文本。</sup>
+	</div>
+	<br>
+	<h2>Text-level 2</h2>
+	<div style="border: 1px solid #FFFF64">
+	    time 定义<time datetime="2012-02-14">日期/时间</time><br>
+	    <code>code 定义计算机代码文本。</code><br>
+	    <kbd>kbd 定义键盘文本。它表示文本是从键盘上键入的。它经常用在与计算机相关的文档或手册中。</kbd><br>
+	    <samp>samp 定义样本文本。</samp><br>
+	    <var>var 定义变量。您可以将此标签与 &lt;pre&gt; 及 &lt;code&gt; 标签配合使用。</var><br>
+	    <mark>mark 定义有记号的文本。</mark><br>
+	    <!-- bdi 定义文本的文本方向，使其脱离其周围文本的方向设置。 -->
+		<bdo dir="rtl">bdo 定义文本显示的方向。</bdo><br>
+		<ruby>
+		    <rp>【</rp>
+		    <rt>ruby 标签定义 ruby 注释（中文注音或字符）。</rt>
+		    <rp>】</rp>
+		</ruby><br>
+		<span>span 定义文档中的 section。</span><br>
+		<wbr>
+	</div>
+	<br>
+</body>
+</html>
