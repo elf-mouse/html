@@ -532,20 +532,20 @@
     </div>
     <img src="http://img03.taobaocdn.com/tps/i4/T1Z7kLXe0eXXcW3lHq-465-1875.jpg" width="465" height="1875" style="position:absolute;right: 0;top: 18px;">
 </div>
-<img src="http://img04.taobaocdn.com/tps/i1/T1TB3KXfdfXXbiGZIv-960-465.jpg" width="960" height="465" spid="L_fgx" class="L_jg1 L_fgx">
-<img src="http://img01.taobaocdn.com/tps/i4/T1D3kMXhBaXXbiGZIv-960-465.jpg" width="960" height="465" spid="L_fgx" class="L_jg2 L_fgx">
-<img src="http://img02.taobaocdn.com/tps/i4/T1TtwMXfXbXXb0Ir.v-960-415.jpg" width="960" height="415" spid="L_fgx" class="L_jg3 L_fgx">
-<img src="http://img03.taobaocdn.com/tps/i2/T1CYZLXdXeXXb0Ir.v-960-415.jpg" width="960" height="415" spid="L_fgx" class="L_jg4 L_fgx">
-<img src="http://img04.taobaocdn.com/tps/i2/T1gVoNXbBXXXaVwYIv-960-345.jpg" width="960" height="345" spid="L_fgx" class="L_jg5 L_fgx">
-<img src="http://img01.taobaocdn.com/tps/i3/T1nQgLXndcXXaVwYIv-960-345.jpg" width="960" height="345" spid="L_fgx" class="L_jg6 L_fgx">
-<img src="http://img02.taobaocdn.com/tps/i3/T1dGIRXdxeXXcDU5zA-1920-694.jpg" width="1920" height="694" spid="L_fgx" class="L_jg7 L_fgx">
-<img src="http://img03.taobaocdn.com/tps/i3/T12jMLXi8fXXXYXgLA-1920-470.jpg" width="1920" height="470" spid="L_fgx" class="L_jg8 L_fgx">
-<img src="http://img04.taobaocdn.com/tps/i4/T1i0wSXedXXXclnL6A-1920-377.jpg" width="1920" height="377" spid="L_fgx" spid="L_fgx" class="L_jg9 L_fgx">
-<img src="http://img01.taobaocdn.com/tps/i2/T1AqkUXcXbXXX7A2YA-1920-400.jpg" width="1920" height="400" spid="L_fgx" class="L_jg10 L_fgx">
+<img src="http://img04.taobaocdn.com/tps/i1/T1TB3KXfdfXXbiGZIv-960-465.jpg" width="960" height="465" class="L_jg1 L_fgx">
+<img src="http://img01.taobaocdn.com/tps/i4/T1D3kMXhBaXXbiGZIv-960-465.jpg" width="960" height="465" class="L_jg2 L_fgx">
+<img src="http://img02.taobaocdn.com/tps/i4/T1TtwMXfXbXXb0Ir.v-960-415.jpg" width="960" height="415" class="L_jg3 L_fgx">
+<img src="http://img03.taobaocdn.com/tps/i2/T1CYZLXdXeXXb0Ir.v-960-415.jpg" width="960" height="415" class="L_jg4 L_fgx">
+<img src="http://img04.taobaocdn.com/tps/i2/T1gVoNXbBXXXaVwYIv-960-345.jpg" width="960" height="345" class="L_jg5 L_fgx">
+<img src="http://img01.taobaocdn.com/tps/i3/T1nQgLXndcXXaVwYIv-960-345.jpg" width="960" height="345" class="L_jg6 L_fgx">
+<img src="http://img02.taobaocdn.com/tps/i3/T1dGIRXdxeXXcDU5zA-1920-694.jpg" width="1920" height="694" class="L_jg7 L_fgx">
+<img src="http://img03.taobaocdn.com/tps/i3/T12jMLXi8fXXXYXgLA-1920-470.jpg" width="1920" height="470" class="L_jg8 L_fgx">
+<img src="http://img04.taobaocdn.com/tps/i4/T1i0wSXedXXXclnL6A-1920-377.jpg" width="1920" height="377" class="L_jg9 L_fgx">
+<img src="http://img01.taobaocdn.com/tps/i2/T1AqkUXcXbXXX7A2YA-1920-400.jpg" width="1920" height="400" class="L_jg10 L_fgx">
 </div>
 <!-- map -->
 <div class="map_small map_stay">
-    <a href="javascript:;" target="_self" id="J_mapShow"><img src="images/pagemap-min.png" width="133" height="127" class="J_mapShow_img"></a>
+    <a href="javascript:;" target="_self" id="J_mapShow"><img src="images/pagemap/pagemap-min.png" width="133" height="127" class="J_mapShow_img"></a>
 </div>
 <div class="map_box">
     <div class="map_box_con">
@@ -562,6 +562,6 @@
 </div>
 <!-- map end -->
 <div class="tishi_msg">
-    <img src="images/pagemap-msg.png" class="tishi_msg_img" width="99" height="109">
+    <img src="images/pagemap/pagemap-msg.png" class="tishi_msg_img" width="99" height="109">
 </div>
 </div>
