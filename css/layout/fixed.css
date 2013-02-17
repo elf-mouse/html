@@ -1,0 +1,106 @@
+.fixed-container {
+    font-family: 'Open Sans', arial, sans-serif;
+    font-size: 14px;
+    width: 960px;
+    height: 100%;
+    margin: 0 auto;
+}
+.fixed-container.fixed-outer {
+    width: 1200px;
+}
+.dialog-container {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1101;
+    background-color: rgba(255, 255, 255, 0.55);
+    display: none;
+}
+.dialog-overlay {
+    position: fixed;
+    top: 0;
+    left: 240px;
+    right: 0;
+    text-align: center;
+    z-index: 5000;
+}
+.fixed-left {
+    position: fixed;
+    width: 238px;
+    height: 100%;
+    z-index: 100;
+}
+.nav-inner {
+    width: 238px;
+    background-color: #ECECEC;
+    border-left: 1px solid #BDBDBD;
+    border-right: 1px solid #BDBDBD;
+    height: 100%;
+}
+.fixed-body {
+    margin-left: 240px;
+    width: 720px;
+    min-height: 100%;
+    position: relative;
+    display: inline-block;
+    background-color: #ECECEC;
+    -webkit-box-shadow: inset 0 0 1px #B2B2B2;
+    -moz-box-shadow: inset 0 0 1px #b2b2b2;
+    box-shadow: inset 0 0 1px #B2B2B2;
+}
+.fixed-container .fixed-body {
+    width: 960px;
+}
+.fixed-top, .fixed-bottom {
+    position: fixed;
+    height: 39px;
+    width: 719px;
+    background-color: #ECECEC;
+    border-right: 1px solid #BDBDBD;
+    z-index: 100;
+    padding: 0px;
+    color: #333;
+}
+.fixed-top {
+    border-bottom: 1px solid #BDBDBD;
+}
+.fixed-bottom {
+    border-top: 1px solid #BDBDBD;
+    bottom: 0;
+}
+.fixed-container .fixed-top, .fixed-container .fixed-bottom {
+    width: 959px;
+}
+.fixed-content {
+    position: relative;
+    margin-top: 40px;
+    padding-bottom: 40px;
+}
+/* ie */
+.lte7 .fixed-left {
+    margin-left: -240px;
+}
+.ie6 .chromeframe, .ie6 .fixed-left, .ie6 .fixed-top, .ie6 .fixed-bottom {
+    position: absolute;
+}
+.ie6 .chromeframe {
+    top: expression(eval(document.documentElement.scrollTop));
+    width: 100%;
+    z-index: 777;
+}
+.ie6 .fixed-left, .ie6 .fixed-top {
+    top: expression(eval(document.documentElement.scrollTop) + 22);
+}
+.ie6 .fixed-bottom {
+    top:expression(eval(document.documentElement.scrollTop+document.documentElement.clientHeight-this.offsetHeight));
+}
+.ie6 .fixed-container, .ie6 .fixed-container .fixed-body {
+    background-color: #ECECEC;
+    border-left: 1px solid #BDBDBD;
+}
+.ie6 .nav-inner {
+    width: 240px;
+    border-left: 0;
+}

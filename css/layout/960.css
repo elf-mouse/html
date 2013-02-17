@@ -1,0 +1,62 @@
+#container {
+    width: 960px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+/* 1 */
+.w-960, .block-1 {
+    width: 960px;
+}
+/* 2 */
+.w-480, .block-2 {
+    width: 480px;
+}
+/* 3 */
+.w-320, .block-3 {
+    width: 320px;
+}
+.w-640 {
+    width: 640px;
+}
+/* 4 */
+.w-240, .block-4 {
+    width: 240px;
+}
+.w-720 {
+    width: 720px;
+}
+/* 6 */
+.w-160, .block-6 {
+    width: 160px;
+}
+.w-800 {
+    width: 800px;
+}
+/* space */
+.iblock-space .block-2 {
+    width: 470px;
+}
+.iblock-space .block-left {
+    margin-right: 10px;
+}
+.iblock-space .block-right {
+    margin-left: 10px;
+}
+.iblock-space .block-3 {
+    width: 310px;
+}
+.iblock-space .block-center {
+    margin: 0 15px;
+}
+.iblock-space .block-4 {
+    width: 234px;
+    margin-right: 8px;
+}
+.iblock-space .block-last {
+    margin: 0;
+}
+
+/* test */
+.iblock {
+    height: 100px;
+}
