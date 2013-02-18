@@ -1,70 +1,75 @@
 /**
  * Roller
  * @author Elf-mousE
+ * 2013.02.18 updated
  */
 (function($) {
 
-	var $this, $last, timer, length;
-	var top = 0;
-	var defaults = {
+	var $this, $last, defaults = {
 		container : '.roll-outer',
 		className : '.roll',
 		itemClassName : '.roll-item',
 		second : 3000,
 		position : 'bottom', // bottom or top
-		padding: 0
-	};
-	var checkPosition = function(opts) {
+		padding : 0
+	}, checkPosition = function(opts) {
 		if (typeof opts !== 'undefined' && typeof opts === 'object') {
 			$.extend(defaults, opts);
 		}
-	};
-	var roll = {
-		top : function(obj) {
-			$last = obj.find(defaults.itemClassName).eq(length);
+	}, roll = {
+		toBottom : function(obj) {
+			$last = obj.find(defaults.itemClassName).eq(obj.data('length'));
 			$last.prependTo(obj);
 			obj.css('top', '-' + ($last.height() + defaults.padding) + 'px');
 		},
-		bottom : function(obj) {
+		toTop : function(obj) {
 			$last = obj.find(defaults.itemClassName).eq(0);
 			$last.appendTo(obj);
-			top = '-' + (obj.find(defaults.itemClassName).eq(0).height() + defaults.padding);
+			obj.data('top', '-' + (obj.find(defaults.itemClassName).eq(0).height() + defaults.padding));
 			obj.css('top', 0);
 		}
-	};
-	var moveAction = function() {
-		$(defaults.className).animate({
-			top : top
+	}, moveAction = function(obj) {
+		obj.animate({
+			top : obj.data('top')
 		}, 1000, function() {
 			if (defaults.position != 'top') {
-				roll.top($(this));
+				roll.toBottom(obj);
+			} else {
+				roll.toTop(obj);
 			}
-			else {
-				roll.bottom($(this));
-			}
+		});
+	}, rollAction = function(obj, container) {
+		obj.data('timer', setInterval(function() {
+			moveAction(obj);
+		}, defaults.second));
+	}, roller = function(obj, container) {
+		if (defaults.position != 'top') {
+			obj.data('length', obj.find(defaults.itemClassName).length - 1);
+			obj.data('top', 0);
+			roll.toBottom(obj);
+		} else {
+			obj.data('top', '-' + (obj.find(defaults.itemClassName).eq(0).height() + defaults.padding));
+		}
+		rollAction(obj, container);
+		$(container).hover(function() {
+			clearInterval(obj.data('timer'));
+		}, function() {
+			rollAction(obj, container);
 		});
 	};
 
 	$.roller = $.fn.roller = function(opts) {
 		checkPosition(opts);
-		$this = $(defaults.className);
-		length = $this.find(defaults.itemClassName).length - 1;
-		if (defaults.position != 'top') {
-			roll.top($this);
+		if (typeof defaults.container == 'string') {
+			$this = $(defaults.container + ' ' + defaults.className);
+			roller($this, defaults.container);
+		} else {
+			$this = {};
+			for ( var i = 0, len = defaults.container.length; i < len; i++) {
+				$this[i] = $(defaults.container[i] + ' ' + defaults.className);
+				roller($this[i], defaults.container[i]);
+			}
 		}
-		else {
-			top = '-' + ($this.find(defaults.itemClassName).eq(0).height() + defaults.padding);
-		}
-		timer = setInterval(function() {
-			moveAction();
-		}, defaults.second);
-		$(defaults.container).hover(function() {
-			clearInterval(timer);
-		}, function() {
-			timer = setInterval(function() {
-				moveAction();
-			}, defaults.second);
-		});
 	};
 
 })(jQuery);
@@ -72,6 +77,7 @@
 // demo
 $(function() {
 	$.roller({
+		//container : [ '.a', '.b' ],
 		//position : 'top',
 		padding : 10
 	});
