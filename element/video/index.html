@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+  <div>
+    <video id="my-video" width="320" height="240" controls poster="poster.png" preload="metadata">
+      <source src="movie.mp4#t=5,10" type="video/mp4">
+      <source src="movie.ogg#t=5,10" type="video/ogg">
+      Your browser does not support the video tag.
+    </video>
+    <br>
+    <button onclick="playPause()">Play/Pause</button>
+    <button onclick="makeBig()">Big</button>
+    <button onclick="makeSmall()">Small</button>
+  </div>
+  <script src="main.js"></script>
+</body>
+
+</html>
